@@ -6,3 +6,7 @@
 .listView {
   margin: 70px;
 }
+
+.task_notes {
+  font-size: 20px;
+}

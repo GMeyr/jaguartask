@@ -2,7 +2,8 @@ angular.module('jaguarTask', [
 	'ui.router',
 	'jaguarTask.home',
   'jaguarTask.main',
-  'jaguarTask.list'
+  'jaguarTask.list',
+  'jaguarTask.task'
 ])
 .config(function($stateProvider, $urlRouterProvider) {
 	
@@ -34,10 +35,15 @@ angular.module('jaguarTask', [
       templateUrl: 'main/main.html',
       controller: 'MainController'
     })
-    .state('list', {//'main.list'
+    .state('list', {
       url: '/list',
       templateUrl: 'fullList/fullList.html',
       controller: 'listController'
+    })
+    .state('task', {
+      url: '/task',
+      templateUrl: 'task/task.html',
+      controller: 'taskController'
     })
 })
 .run(function($rootScope){
