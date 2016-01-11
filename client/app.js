@@ -6,13 +6,8 @@ angular.module('jaguarTask', [
   'jaguarTask.main',
   'jaguarTask.list',
   'jaguarTask.login',
-<<<<<<< HEAD
   'jaguarTask.register',
   'jaguarTask.jtapp'
-=======
-  'jaguarTask.task',
-  'jaguarTask.register'
->>>>>>> merge rebase
 ])
 .config(function($stateProvider, $urlRouterProvider, jwtInterceptorProvider, $httpProvider) {
 	
