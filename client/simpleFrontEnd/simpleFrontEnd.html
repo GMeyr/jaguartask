@@ -1,3 +1,11 @@
 <p>Hello Jaguars!</p>
 <p>{{ msg }}</p>
 <p>{{ msg2 }}</p>
+<div data-ng-controller="simpleCtrl">
+  <form name="listForm" novalidate role="form">
+    <label for="newListName">List Name</label>
+    <input type="text" name="newListName" data-ng-model="newListName" required>
+
+    <button data-ng-click="submit(listForm)">Create List</button>
+  </form>
+</div>
