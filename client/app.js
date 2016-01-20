@@ -25,10 +25,10 @@ angular.module('jaguarTask', [
   	.state('homepage', {
     	url: '/home',
       // commenting out b/c I couldn't click on input elements
-    	// templateUrl: 'home/home-partial.html',
-    	// controller: 'HomePageController',
-      templateUrl: 'simpleFrontEnd/simpleFrontEnd.html',
-      controller: 'simpleCtrl'
+    	templateUrl: 'home/home-partial.html',
+    	controller: 'HomePageController',
+      //templateUrl: 'simpleFrontEnd/simpleFrontEnd.html',
+      //controller: 'simpleCtrl'
   	})
   	.state('homepage.index', {
   		url: '/index',

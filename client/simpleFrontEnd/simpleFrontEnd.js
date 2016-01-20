@@ -12,7 +12,7 @@ angular.module('jaguarTask.simple', [])
 
     submit: function(data){
       console.log("form data", data);
-      console.log("new list name", data.newListName);
+      console.log("new list name", data.newListName.$viewValue);
     }
   };
   return listObj;
